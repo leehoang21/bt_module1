@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void ShakerSort(List<int> arr) {
+void shakerSort(List<int> arr) {
   int t = 0, p = arr.length - 1, k = 0;
 
   while (t < p) {
@@ -25,7 +25,7 @@ void ShakerSort(List<int> arr) {
   }
 }
 
-void HienThi(List<int> arr) {
+void hienThi(List<int> arr) {
   arr.forEach((i) {
     stdout.write(' ' + i.toString());
   });
@@ -48,12 +48,12 @@ void main(List<String> args) {
   int chon = int.parse(stdin.readLineSync()!);
   switch (chon) {
     case 1:
-      ShakerSort(arr);
-      HienThi(arr);
+      shakerSort(arr);
+      hienThi(arr);
       break;
     case 2:
-      ShakerSort(arr);
-      HienThi(arr.reversed.toList());
+      shakerSort(arr);
+      hienThi(arr.reversed.toList());
       break;
   }
 }

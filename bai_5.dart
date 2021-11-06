@@ -2,10 +2,10 @@ import 'dart:io';
 
 import 'bai_3.dart';
 
-void HienThi(List<List<int>> arr) {
+void hienThi(List<List<int>> arr) {
   arr.forEach((i) {
     i.forEach((j) {
-      if (LaSoNTo(j)) stdout.write(' ' + j.toString());
+      if (laSoNTo(j)) stdout.write(' ' + j.toString());
     });
   });
 }
@@ -23,5 +23,5 @@ void main(List<String> args) {
       arr[i][j] = int.parse(stdin.readLineSync()!);
     }
   }
-  HienThi(arr);
+  hienThi(arr);
 }

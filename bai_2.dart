@@ -1,6 +1,6 @@
 import 'dart:io';
 
-int Tong(List<int> arr) {
+int tong(List<int> arr) {
   int sum = 0;
   for (int i = 0; i < arr.length; i++) {
     sum += arr[i];
@@ -19,5 +19,5 @@ void main(List<String> args) {
     t = int.parse(stdin.readLineSync()!);
     arr.add(t);
   }
-  print(Tong(arr));
+  print(tong(arr));
 }

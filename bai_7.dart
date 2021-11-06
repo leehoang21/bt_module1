@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'bai_1.dart';
 
-void TaoMaTran(List<List<int>> arr, String g) {
+void taoMaTran(List<List<int>> arr, String g) {
   int t, d, c;
   print('moi ban nhap lan luot so dong,cot cua ma tran $g');
   d = int.parse(stdin.readLineSync()!);
@@ -18,7 +18,7 @@ void TaoMaTran(List<List<int>> arr, String g) {
   }
 }
 
-TinhTichMaTran(
+tinhTichMaTran(
   List<List<int>> m1,
   List<List<int>> m2,
   List<List<int>> mul,
@@ -43,11 +43,11 @@ TinhTichMaTran(
 
 void main(List<String> args) {
   List<List<int>> m1 = [], m2 = [], mul = [];
-  TaoMaTran(m1, 'A');
-  TaoMaTran(m2, 'B');
-  TinhTichMaTran(m1, m2, mul);
+  taoMaTran(m1, 'A');
+  taoMaTran(m2, 'B');
+  tinhTichMaTran(m1, m2, mul);
   mul.forEach((i) {
     print('');
-    HienThi(i);
+    hienThi(i);
   });
 }

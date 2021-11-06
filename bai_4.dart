@@ -1,6 +1,6 @@
 import 'dart:io';
 
-int TKSNBKiXuatHienTrongMang(List<int> arr, int k) {
+int tKSNBKiXuatHienTrongMang(List<int> arr, int k) {
   int num = 0;
   arr.forEach((i) {
     if (k == i) num++;
@@ -8,8 +8,8 @@ int TKSNBKiXuatHienTrongMang(List<int> arr, int k) {
   return num;
 }
 
-void CoXuatHien(List<int> arr, int k) {
-  int n = TKSNBKiXuatHienTrongMang(arr, k);
+void coXuatHien(List<int> arr, int k) {
+  int n = tKSNBKiXuatHienTrongMang(arr, k);
   if (n != 0) {
     print('$k co thuoc mang va xuat hien $n lan');
   } else {
@@ -31,5 +31,5 @@ void main(List<String> args) {
 
   print('nhap so nguyen k bat ki');
   t = int.parse(stdin.readLineSync()!);
-  CoXuatHien(arr, t);
+  coXuatHien(arr, t);
 }

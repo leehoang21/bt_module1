@@ -1,6 +1,6 @@
 import 'dart:io';
 
-bool LaSoNTo(int a) {
+bool laSoNTo(int a) {
   if (a < 2) return false;
   for (int i = 2; i < a; i++) {
     if (a % i == 0) return false;
@@ -8,9 +8,9 @@ bool LaSoNTo(int a) {
   return true;
 }
 
-void HienThi(List<int> arr) {
+void hienThi(List<int> arr) {
   arr.forEach((i) {
-    if (LaSoNTo(i)) stdout.write(' ' + i.toString());
+    if (laSoNTo(i)) stdout.write(' ' + i.toString());
   });
 }
 
@@ -26,5 +26,5 @@ void main(List<String> args) {
     arr.add(t);
   }
 
-  HienThi(arr);
+  hienThi(arr);
 }
